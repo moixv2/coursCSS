@@ -1,0 +1,33 @@
+.post{
+
+}
+
+.post1{ grid-area: post1; }
+.post2{ grid-area: post2; }
+.post3{ grid-area: post3; }
+.post4{ grid-area: post4; }
+.post5{ grid-area: post5; }
+.post6{ grid-area: post6; }
+
+.post-img{
+	margin: 0 0 .5rem 0;
+}
+
+.post-title{
+	font-family: georgia;
+	font-size: 1.5rem;
+	margin: 0 0 1rem 0;
+}
+
+.post-source{
+	font-size: .8rem;
+	text-transform: uppercase;
+}
+
+.post-background{
+	padding: .5rem;
+}
+
+.post-horizontal{
+	display: flex;
+}

@@ -1,0 +1,13 @@
+.primary-nav{
+	text-align: center;
+	padding: .5rem 0 0 0;
+}
+
+.primary-nav > a{
+	text-transform: uppercase;
+	margin: 0 .5rem;
+}
+
+.primary-nav-vertical > a{
+	display: block;
+}

@@ -1,0 +1,77 @@
+/*
+	points de rupture (points break) : largeurs à partir desquelles les styles CSS vont etre adaptés
+	recommandé d'utiliser les sélecteurs identiques qu'en version bureau6
+
+	1rem : par défaut 1rem équivaut à 16px
+		80 * 16 : 1280
+*/
+@media only screen and (max-width: 80rem){
+	.container{
+		max-width: calc(100% - 4rem);
+		margin: 5rem 2rem;
+	}
+
+	.is-desktop-hidden{
+		/* initial : valeur initiale CSS de l'élément */
+		display: initial;
+	}
+
+	/* :not() : négation dans un sélecteur CSS */
+	.primary-nav > a:not(.primary-nav-site-title){
+		display: none;
+	}
+
+	.primary-nav-site-title{
+		position: fixed;
+		top: .2rem;
+		right: .5rem;
+	}
+
+	/* 1px / 16 : 0.0625rem */
+	.site-nav{
+		height: 4rem;
+		border-bottom: .0625rem solid rgba(50, 50, 50, 1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	/* navigation en mode mobile */
+	.site-nav-mobile .primary-nav{
+		height: 100vh;
+		padding: 25vh 0 0 0;
+	}
+
+	.site-nav-mobile .primary-nav > a:not(.primary-nav-site-title){
+		display: block;
+		padding: 1rem 0;
+		font-size: 1.2rem;
+	}
+
+	.site-nav-mobile .primary-nav{
+		background-color: rgba(0, 0, 0, .9);
+	}
+	
+	.site-nav-mobile .primary-nav-site-title{
+		color: rgba(255, 255, 255, 1);
+	}
+	
+	.site-nav-mobile .icon-mobile-nav{
+		background-color: rgba(255, 255, 255, 1);
+	}
+	
+	.site-nav-mobile .primary-nav > a:not(.primary-nav-site-title){
+		color: rgba(255, 255, 255, 1);
+	}
+}
+
+/* point de rupture à 800px : 50rem */
+@media only screen and (max-width: 50rem){
+	/* supprimer les colonnes */
+	.col{
+		float: initial;
+		width: 100%;
+	}
+}

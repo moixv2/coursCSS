@@ -1,0 +1,55 @@
+.text{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg-grunge-subtle-repeat.jpg);
+}
+
+.item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+}
+
+.item-title{
+    font-size: 1.2rem;
+    padding: .7rem;
+}
+
+.item-title-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.item1{
+    background-image: url(../img/west-highland-way.jpg);
+    grid-area: item1;
+}
+
+.item2{
+    background-image: url(../img/john-muir-way-signpost.jpg);
+    grid-area: item2;
+}
+
+.item3{
+    background-image: url(../img/southern-upland-way-loch-trool.jpg);
+    grid-area: item3;
+}
+
+.item4{
+    background-image: url(../img/great-glen-walkers-autumn.jpg);
+    grid-area: item4;
+}
+
+.item5{
+    background-image: url(../img/fife-coastal-path-west-bay.jpg);
+    grid-area: item5;
+}
+
+.item6{
+    background-image: url(../img/Auchintaple-loch.jpg);
+    grid-area: item6;
+}

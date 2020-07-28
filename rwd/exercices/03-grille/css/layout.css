@@ -1,0 +1,20 @@
+.container{
+    width: 90rem;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 34% 66%;
+}
+
+.list-item{
+    display: grid;
+
+    grid-template: 
+        'item1 item2 item3' 10rem 
+        'item1 item5 item3' 3rem
+        'item4 item5 item6' 10rem /
+        34% 33% 33%
+    ;
+    gap: 0.5rem;
+}

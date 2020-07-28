@@ -1,0 +1,24 @@
+.container{
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+.site-header{
+	height: 5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.site-nav{
+	min-height: 2rem;
+	margin: 0 0 1rem 0;
+}
+
+.site-main{
+	height: 100vh;
+}
+
+.site-footer{
+	height: 2rem;
+}

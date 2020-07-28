@@ -1,0 +1,26 @@
+.col{
+	float: left;
+
+	&-w65{
+		width: calc(65% - 2rem);
+		margin: 0 2rem 0 0;
+	}
+
+	&-w35{
+		width: 35%;
+	}
+
+	&-w33{
+		width: calc((100% / 3) - 2rem);
+		margin: 0 3rem 0 0;
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	@media only screen and (max-width: #{map-get($pointsBreak, mobile)}rem){
+		float: initial;
+		width: 100%;
+	}
+}

@@ -1,0 +1,11 @@
+@mixin fontFamilySize($family, $size){
+	font-family: $family;
+	//font-size: $size + rem;
+	font-size: #{$size}rem;
+}
+
+@mixin position($type, $xProperty: left, $xPropertyValue: 0, $yProperty: top, $yPropertyValue: 0){
+	position: $type;
+	#{$xProperty}: $xPropertyValue;
+	#{$yProperty}: $yPropertyValue;
+}

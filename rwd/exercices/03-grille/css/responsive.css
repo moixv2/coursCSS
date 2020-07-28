@@ -1,0 +1,25 @@
+@media only screen and (max-width : 90rem){
+    .container{
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width : 60rem){
+    .list-item{
+        grid-template: 
+            'item1' 10rem 
+            'item2' 10rem
+            'item3' 10rem
+            'item4' 10rem
+            'item5' 10rem
+            'item6' 10rem /
+            100%
+        ;
+    }
+
+    .item-title-bottom{
+        justify-content: flex-start;
+    }
+}

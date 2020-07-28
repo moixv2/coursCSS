@@ -1,0 +1,29 @@
+// variables simples
+$containerWidth: 80;
+
+$colorIconMobileNav: rgba(50, 50, 50, 1);
+$colorBadge: 'rgba(255, 255, 255, 1)';
+
+//@debug ($containerWidth * 16) + 'rem';
+
+// listes
+$titleSize: (2, 1.5, 1.2);
+$horizontalValues: (left, center, right);
+
+// map
+$fontList: (
+	LatoRegular: 'Lato-Regular.ttf',
+	LatoBold: 'Lato-Bold.ttf',
+	Oswald: 'Oswald-VariableFont_wght.ttf'
+);
+
+$categoriesItemBgImg: (
+	lifestyle: 'close-up-photography-of-woman-sitting-beside-table-while-3178818.jpg',
+	architecture: 'white-and-green-high-rise-building-3526084.jpg',
+	travel: 'smartphone-beside-watch-and-camera-3243090.jpg'
+);
+
+$pointsBreak: (
+	tablet: $containerWidth,
+	mobile: 50
+);

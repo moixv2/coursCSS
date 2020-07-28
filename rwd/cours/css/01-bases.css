@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+}
+
+#link{
+	color: goldenrod;
+}
+
+a{
+	color: #000;
+}
+
+/* 3 + 2 */
+.link{ 
+	color:red;
+}
+
+.site-nav{
+	background-color: teal;
+	position: sticky;
+	top: 0;
+	left: 0;
+	margin: 5rem 0 0 0;
+	z-index: 1;
+}
+
+.square{
+	width: 5rem;
+	height: 5rem;
+	background-color: grey;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+.square2{
+	position: fixed;
+	background-color: gold;
+	z-index: 1;
+}
+
+.container{
+	max-width: 50rem; /* 50 * 16 : 800 */
+	min-height: 200vh;
+	background-color: brown;
+	margin: 0 auto;
+	position: relative; /* référence pour le positionnement absolu */
+}
+
+
+.block-img{
+	width: 50vw;
+	padding: 5rem;
+}
+
+img, video, iframe{
+	width: 100%;
+}
+
+.block{
+	/* vw : viewport width / vh : viewport height */
+	width: 100vw;
+	height: 100vh;
+	background-color: tomato;
+	/* haut / droite / bas / gauche */
+	padding: 0 0 0 2rem;
+}
+
+.block-inner{
+	background-color: olive;
+}
+
+/* > : enfant direct */
+/* 1rem : 1 * 16px */
+.block > p{
+	font-size: 3rem;
+}
+
+/*
+	requêtes de média - media queries
+	cibler uniquement les écrans couleurs jusqu'à la largeur de 800px
+*/
+@media only screen and (max-width: 50rem){
+	body{
+		background-color: lightblue;
+	}
+}
+
+/* cibler uniquement les écrans couleurs jusqu'à la largeur de 320px */
+@media only screen and (max-width: 20rem){
+	body{
+		background-color: lightgreen;
+	}
+}

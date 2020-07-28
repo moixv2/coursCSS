@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: LatoRegular;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: Oswald;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: LatoRegular;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-family: LatoRegular;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 80rem) {
+  .container {
+    max-width: calc(100% - 4rem);
+    margin: 5rem 2rem;
+  }
+}
+
+.site-nav {
+  margin: 0 0 2rem 0;
+}
+
+@media only screen and (max-width: 80rem) {
+  .site-nav {
+    height: 4rem;
+    border-bottom: 0.0625rem solid #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+  .site-nav-mobile .primary-nav {
+    height: 100vh;
+    padding: 25vh 0 0 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .site-nav-mobile .primary-nav > a:not(.primary-nav-site-title) {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  .site-nav-mobile .primary-nav-site-title {
+    color: white;
+  }
+  .site-nav-mobile .icon-mobile-nav {
+    background-color: white;
+  }
+  .site-nav-mobile .primary-nav > a:not(.primary-nav-site-title) {
+    color: white;
+  }
+}
+
+.articles-main {
+  margin: 0 0 3rem 0;
+}
+
+.badge {
+  border-radius: .5rem;
+  padding: .7rem 1.5rem;
+  text-transform: uppercase;
+  font-family: LatoBold;
+  display: inline-block;
+}
+
+.categories-list {
+  margin: 2rem 0 0 0;
+}
+
+.categories-item {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.col {
+  float: left;
+}
+
+.col-w65 {
+  width: calc(65% - 2rem);
+  margin: 0 2rem 0 0;
+}
+
+.col-w35 {
+  width: 35%;
+}
+
+.col-w33 {
+  width: calc((100% / 3) - 2rem);
+  margin: 0 3rem 0 0;
+}
+
+.col-w33:last-child {
+  margin: 0;
+}
+
+@media only screen and (max-width: 50rem) {
+  .col {
+    float: initial;
+    width: 100%;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.post {
+  margin: 0 0 3rem 0;
+}
+
+.post-img {
+  margin: 0 0 1rem 0;
+}
+
+.primary-nav {
+  text-align: center;
+}
+
+.primary-nav > a {
+  display: inline-block;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+@media only screen and (max-width: 80rem) {
+  .primary-nav > a:not(.primary-nav-site-title) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  .primary-nav-site-title {
+    position: fixed;
+    top: .2rem;
+    right: .5rem;
+  }
+}
+
+.icon-mobile-nav {
+  font-size: 1.5rem;
+  position: fixed;
+  top: .2rem;
+  left: .2rem;
+  padding: 1rem;
+}
+
+.is-desktop-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 80rem) {
+  .is-desktop-hidden {
+    display: initial;
+  }
+}
+
+.primary-nav > a, .icon-mobile-nav {
+  color: #323232;
+}
+
+.badge {
+  color: rgba(255, 255, 255, 1);
+}
+
+.badge-travel {
+  background-color: #46b4aa;
+}
+
+.badge-lifestyle {
+  background-color: #87af4b;
+}
+
+.badge-architecture {
+  background-color: #af5f9b;
+}
+
+h2, h3, p {
+  color: #646464;
+}
+
+.categories-item-lifestyle {
+  background-image: url(../img/close-up-photography-of-woman-sitting-beside-table-while-3178818.jpg);
+}
+
+.categories-item-architecture {
+  background-image: url(../img/white-and-green-high-rise-building-3526084.jpg);
+}
+
+.categories-item-travel {
+  background-image: url(../img/smartphone-beside-watch-and-camera-3243090.jpg);
+}
+
+/*# sourceMappingURL=main.min.css.map */

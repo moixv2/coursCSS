@@ -1,0 +1,13 @@
+.container{
+	max-width: 65rem;
+	margin: 0 auto;
+	display: grid;
+
+	grid-template:
+		'post1 post1 post1 post2 post2 post3' 1fr
+		'post1 post1 post1 post4 post4 post4' 1fr
+		'post5 ad post6 post6 . .' 1fr /
+		25% 18% 7% 17% 8% 25%
+	;
+	gap: 1rem;
+}

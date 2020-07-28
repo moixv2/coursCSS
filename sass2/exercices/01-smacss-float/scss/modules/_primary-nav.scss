@@ -1,0 +1,31 @@
+.primary-nav{
+	text-align: center;
+
+	> a {
+		display: inline-block;
+		padding: .5rem;
+		text-transform: uppercase;
+		font-size: .8rem;
+
+		&:not(.primary-nav-site-title){
+			@media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+				display: none;
+			}
+		}
+	}
+
+	&-site-title{
+		@media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+			@include position (fixed, right, .5rem, top, .2rem);
+		}
+	}
+}
+
+.icon-mobile-nav{
+	font-size: 1.5rem;
+	@include position (fixed, left, .2rem, top, .2rem);
+	/*position: fixed;
+	top: .2rem;
+	left: .2rem;*/
+	padding: 1rem;
+}

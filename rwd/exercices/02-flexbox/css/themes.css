@@ -1,0 +1,16 @@
+.header{
+    background-image: url('../img/shutterstock_135084653.webp');
+    color: rgba(255, 255, 255, 1);
+}
+
+.list-pays > a{
+    color: grey;
+}
+
+h2{
+    color: red;
+}
+
+.article-list h2, .article-list h3{
+    color: white;
+}

@@ -1,0 +1,7 @@
+.is-desktop-hidden{
+	display: none;
+
+	@media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+		display: initial;
+	}
+}

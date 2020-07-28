@@ -1,0 +1,29 @@
+.primary-nav > a, .icon-mobile-nav{
+	color: $colorIconMobileNav;
+}
+
+.badge{
+	color: unquote($colorBadge);
+}
+
+.badge-travel{
+	background-color: rgba(70, 180, 170, 1);
+}
+
+.badge-lifestyle{
+	background-color: rgba(135, 175, 75, 1);
+}
+
+.badge-architecture{
+	background-color: rgba(175, 95, 155, 1);
+}
+
+h2, h3, p {
+	color: rgba(100, 100, 100, 1);
+}
+
+@each $categoryName, $categoryImg in $categoriesItemBgImg{
+	.categories-item-#{$categoryName}{
+		background-image: url(../img/#{$categoryImg});
+	}
+}

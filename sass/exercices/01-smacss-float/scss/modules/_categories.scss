@@ -1,0 +1,14 @@
+.categories{
+	&-list{
+		margin: 2rem 0 0 0;
+	}
+
+	&-item{
+		padding: 5rem 0;
+		background: {
+			repeat: no-repeat;
+			size: cover;
+			position: center;
+		}
+	}
+}

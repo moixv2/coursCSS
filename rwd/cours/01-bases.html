@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/01-bases.css">
+</head>
+<body>
+	<!--
+		positionnement CSS:
+			propriété position
+			valeurs :
+				static : valeur par défaut
+				absolute : positionnement fixe par rapport à un bloc de référence / soumis au défilement des ascenseurs
+					- recommandé de positionner l'élément : propriétés top / bottom / left / right
+					- recommandé de définir le bloc de référence pour le positionnement en définissant la propriété position avec une valeur autre que static; par défaut c'est body qui sert de bloc de référence
+					rend possible la superposition des éléments HTML
+				fixed : positionnement fixe par rapport au navigateur / non soumis au défilement des ascenseurs
+					- recommandé de positionner l'élément : propriétés top / bottom / left / right
+				sticky : positionnement fixe par rapport au navigateur après défilement / non soumis au défilement des ascenseurs
+			modifier l'ordre d'affichage du positionnement : propriété z-index; par défaut valeur auto
+	-->
+
+	<a href="#" class="link" id="link">lien</a>
+
+	<nav class="site-nav">nav</nav>
+
+	<div class="square square2">square</div>
+
+	<div class="container">
+		<div class="square">square</div>
+	</div>
+
+	<div class="container">
+		<img src="img/maxresdefault.jpg" alt="" loading="lazy">
+	</div>
+
+	<!-- <div class="block-img">
+		<img src="img/maxresdefault.jpg" alt="">
+	</div>
+
+	<div class="block-img">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.10803373053!2d2.206977064368058!3d48.858774103123785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1584350121717!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+
+	<div class="block">
+		<div class="block block-inner">
+			<p>block</p>
+		</div> 
+	</div>-->
+</body>
+</html>

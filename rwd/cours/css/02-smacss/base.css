@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: arial;
+}
+
+h1{
+	font-family: georgia;
+}
+
+img{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}

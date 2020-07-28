@@ -1,0 +1,20 @@
+.site-header{
+	background-color: lightgrey;
+	background-image: url(../../img/maxresdefault.jpg);
+}
+
+.site-nav{
+	background-color: lightblue;
+}
+
+.site-main{
+	background-color: lightcoral;
+}
+
+.site-footer{
+	background-color: lightsalmon;
+}
+
+.primary-nav > a{
+	color: rgba(50, 50, 50, 1);
+}

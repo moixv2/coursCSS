@@ -1,0 +1,33 @@
+*{
+	 box-sizing: border-box;
+}
+
+body{
+	font-family: LatoRegular;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+h1{
+	@include fontFamilySize(Oswald, nth($titleSize, 1));
+}
+
+h2{
+	@include fontFamilySize(LatoRegular, nth($titleSize, 2));
+	margin: 1rem 0;
+}
+
+h3{
+	@include fontFamilySize(LatoRegular, nth($titleSize, 3));
+	margin: 1rem 0;
+}
+
+p{
+	line-height: 1.5;
+}

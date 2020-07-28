@@ -1,0 +1,12 @@
+@for $i from 1 through length($horizontalValues) {
+	//@debug($i);
+	.text-#{nth($horizontalValues, $i)}{
+		text-align: unquote(nth($horizontalValues, $i));
+	}
+
+	@if $i != 2 {
+		.float-#{nth($horizontalValues, $i)}{
+			float: nth($horizontalValues, $i);
+		}
+	}
+}

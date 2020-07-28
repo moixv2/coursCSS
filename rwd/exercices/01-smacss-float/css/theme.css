@@ -1,0 +1,35 @@
+.primary-nav > a, .icon-mobile-nav{
+	color: rgba(50, 50, 50, 1);
+}
+
+.badge{
+	color: rgba(255, 255, 255, 1);
+}
+
+.badge-travel{
+	background-color: rgba(70, 180, 170, 1);
+}
+
+.badge-lifestyle{
+	background-color: rgba(135, 175, 75, 1);
+}
+
+.badge-architecture{
+	background-color: rgba(175, 95, 155, 1);
+}
+
+h2, h3, p {
+	color: rgba(100, 100, 100, 1);
+}
+
+.categories-item-lifestyle{
+	background-image: url(../img/close-up-photography-of-woman-sitting-beside-table-while-3178818.jpg);
+}
+
+.categories-item-architecture{
+	background-image: url(../img/white-and-green-high-rise-building-3526084.jpg);
+}
+
+.categories-item-travel{
+	background-image: url(../img/smartphone-beside-watch-and-camera-3243090.jpg);
+}

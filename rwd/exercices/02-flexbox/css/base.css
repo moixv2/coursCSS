@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ProximaNova-Regular;
+}
+
+h1{
+    font-family: ProximaNova-Bold;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+h2{
+    font-family: ProximaNova-Bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+h3{
+    font-family: ProximaNova-Bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    line-height: 1.5;
+}

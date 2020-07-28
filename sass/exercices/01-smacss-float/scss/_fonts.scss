@@ -1,0 +1,6 @@
+@each $fontName, $fontFile in $fontList {
+	@font-face{
+		font-family: $fontName;
+		src: url(../fonts/#{$fontFile});
+	}
+}
